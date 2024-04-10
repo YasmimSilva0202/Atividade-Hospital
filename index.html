@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hospital Terceirao</title>
+	
+	<link rel="stylesheet" href="styles.css">
+	<script src="dados.js"></script>
+	<script src="funcoes.js"></script>
+</head>
+<body>
+	<h1>
+		<img src="logo.png" class="logo">
+		Hospital Terceirão
+	</h1>
+	<h2>Ala Norte - Terceiro Andar</h2>
+	<table id="tabelaPacientes">
+		<tr>
+			<th>Leito</th>
+			<th>Nome</th>
+			<th>Oxigenação</th>
+			<th>Sistole</th>
+			<th>Diastole</th>
+			<th>Frequencia Cardiaca</th>
+		</tr>
+	</table>
+	<script>
+		pacientes = dados.pacientes;
+		listarPacientes('tabelaPacientes', pacientes);
+	</script>
+</body>
+</html>
